@@ -1,0 +1,28 @@
+SELECT * FROM cars WHERE price < 100;
+
+SELECT * FROM cars WHERE mileage < 100000 AND fuel_type = 'Diesel';
+
+SELECT * FROM cars ORDER BY price DESC;
+
+SELECT * FROM cars WHERE year LIKE '%02 reg%';
+
+SELECT mileage FROM cars WHERE fuel_type = 'Diesel' ORDER BY mileage DESC;
+
+SELECT * FROM cars WHERE type = 'Suv' OR type ='Estate' ORDER BY engine_size DESC;
+
+SELECT * FROM cars WHERE type = 'Suv' OR type ='Estate' ORDER BY engine_size DESC, mileage DESC;
+
+SELECT * FROM cars WHERE bhp > 150 AND price < 1000 OR mileage < 10000 ORDER BY price;
+
+
+
+Updates
+
+UPDATE cars SET mileage = 170050 WHERE title = 'Volkswagen Passat 1.8 20v Sport 4dr';
+
+UPDATE cars SET price = 100 WHERE title = 'Ford KA 1.3 3dr';
+
+UPDATE cars SET bhp = 105  WHERE title = 'Skoda Fabia SE Tsi Dsg 5dr 1.2';
+
+
+Deletes
