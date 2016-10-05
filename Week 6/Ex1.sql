@@ -1,0 +1,1 @@
+SELECT DISTINCT customers.name, online_orders.date FROM online_orders JOIN customers ON online_orders.customer_id = customers.id;
