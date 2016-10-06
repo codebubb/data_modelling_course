@@ -1,0 +1,1 @@
+CREATE TABLE locations AS SELECT carParkName, street1, street2, street3, town, county, postcode FROM car_parks;
