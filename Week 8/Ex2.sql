@@ -1,0 +1,1 @@
+SELECT username, name, password, department, MAX(salary) AS salary FROM users;
